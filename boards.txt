@@ -1,0 +1,24 @@
+m2.name=Macchina M2 (Native USB Port)
+m2.vid.0=0x2341
+m2.pid.0=0x003e
+m2.vid.1=0x2A03
+m2.pid.1=0x003e
+m2.upload.tool=bossac
+m2.upload.protocol=sam-ba
+m2.upload.maximum_size=524288
+m2.upload.use_1200bps_touch=true
+m2.upload.wait_for_upload_port=true
+m2.upload.native_usb=true
+m2.build.mcu=cortex-m3
+m2.build.f_cpu=84000000L
+m2.build.usb_manufacturer="Arduino LLC"
+m2.build.usb_product="Arduino Due"
+m2.build.board=SAM_DUE
+m2.build.core=arduino
+m2.build.extra_flags=-D__SAM3X8E__ -mthumb {build.usb_flags}
+m2.build.ldscript=linker_scripts/gcc/flash.ld
+m2.build.variant=m2
+m2.build.variant_system_lib=libsam_sam3x8e_gcc_rel.a
+m2.build.vid=0x2341
+m2.build.pid=0x003e
+
