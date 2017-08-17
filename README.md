@@ -1,3 +1,4 @@
-Variant.h
+Macchina M2
 
-Variant.cpp & Variant.h files + associated files & folders for the MACCHINA M2 based on the ATMEL SAM DUE processor chip.
+Variant Support files for the Macchina M2
+Included in this repo Variant.h Variant.cpp + PinNames.txt & M2 Pin Mapping.xls
