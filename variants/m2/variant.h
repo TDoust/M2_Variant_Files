@@ -118,11 +118,11 @@ extern "C"{
 // **************************************************************************** //
 
 // M2 LEDs
-#define DS2				14	// (RED)
-#define DS3				15	// (YELLOW)
-#define DS4				16	// (YELLOW)
-#define	DS5				17	// (YELLOW)
-#define	DS6				18	// (GREEN)
+#define DS2             14	// (RED)
+#define DS3             15	// (YELLOW)
+#define DS4             16	// (YELLOW)
+#define	DS5             17	// (YELLOW)
+#define	DS6             18	// (GREEN)
 
 #define DS7_RED			19	// RGB Red LED
 #define	DS7_GREEN		20	// RGB Green LED
