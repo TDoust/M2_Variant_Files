@@ -1,118 +1,118 @@
-*
-* DUE Board pin  |  PORT  | Label
+
+*  DUE Board pin |  PORT  | Label
 * ---------------+--------+-------
-* 0     (Serial) |  PA8   | "XBEE_RX/RX0"
-* 1              |  PA9   | "XBEE_TX/TX0"
-* 2              |  PB25  | "XBEE_RTS"
-* 3              |  PB26  | "XBEE_CTS"
-* 4              |  PC11  | "XBEE_RST"
-* 5              |  PC13  | "XBEE_STAT"
-* 6              |  PC14  | "XBEE_VREF"
-* 7              |  PB3   | "XBEE_PWM"
-* 8              |  PC12  | "XBEE_MULT1"
-* 9              |  PC15  | "XBEE_MULT2"
-* 10             |  PC17  | "XBEE_MULT3"
-* 11             |  PD6   | "XBEE_MULT4"
-* 12             |  PD9   | "XBEE_MULT5"
-* 13             |  PA7   | "XBEE_MULT6"
-* 14             |  PD10  | "DS2"				// Red LED
-* 15             |  PA5   | "DS3"				// Yellow LED
-* 16             |  PD2   | "DS4"				// Yellow LED
-* 17             |  PA15  | "DS5"				// Yellow LED
-* 18             |  PA14  | "DS6"				// Green LED
-* 19             |  PD7   | "DS7_RED/RGB_RED"
-* 20             |  PD8   | "DS7_GREEN/RGB_GREEN"
-* 21             |  PC25  | "DS7_BLUE/RGB_BLUE"
-* 22             |  PC27  | "Button1"			// M2_Button_1
-* 23             |  PB6A  | "Button2"			// M2_Button_2
-* 24       PWMH0 |  PC3   | "GPIO1"
-* 25       PWMH1 |  PC5   | "GPIO2"
-* 26       PWMH2 |  PC7   | "GPIO3"
-* 27       PWMH3 |  PC9   | "GPIO4"
-* 28       PWMH4 |  PC20  | "GPIO5"
-* 29       PWMH5 |  PC19  | "GPIO6"
-* 30       PWML0 |  PC2   | "GPIO1_B"			// legacy M2 Beta
-* 31       PWML1 |  PC4   | "GPIO2_B"			// legacy M2 Beta
-* 32       PWML2 |  PC6   | "GPIO3_B"			// legacy M2 Beta
-* 33       PWML3 |  PC8   | "GPIO4_B"			// legacy M2 Beta
-* 34       PWML4 |  PC21  | "GPIO5_B"			// legacy M2 Beta
-* 35       PWML5 |  PC22  | "GPIO6_B"			// legacy M2 Beta
-* 36             |  PC30  | "SD_SW"
-* 37             |  PA19  | "MCCK"
-* 38             |  PA20  | "MCCDA"
-* 39             |  PA21  | "MCDA0"
-* 40             |  PA22  | "MCDA1"
-* 41             |  PA23  | "MCDA2"
-* 42             |  PA24  | "MCDA3"
-* 43       MISO  |  PA25  | "SPI0_MISO"		// 26 Pin Connector
-* 44       MOSI  |  PA26  | "SPI0_MOSI"		// 26 Pin Connector
-* 45       SCLK  |  PA27  | "SPI0_CLK"			// 26 Pin Connector
-* 46       NPCS1 |  PA29  | "SPI0_CS1"
-* 47             |  PA28  | "SPI0_CS0"
-* 48             |  PC10  | "PS_BUCK/BUCK_DIS"
-* 49             |  PB5   | "PS_J1850_9141"
-* 50             |  PB8   | "J1850_PWM_VPW"
-* 51             |  PC28  | "J1850_PWM_RX"
-* 52             |  PC26  | "J1850_VPW_RX"
-* 53             |  PC18  | "J1850P_TX"
-* 54             |  PC23  | "J1850N_TX"
-* 55   (Serial1) |  PA11  | "LIN_KTX"
-* 56             |  PA10  | "LIN_KRX"
-* 57             |  PB4   | "LIN_KSLP"
-* 58   (Serial2) |  PA13  | "LIN_LTX"
-* 59             |  PA12  | "LIN_LRX"
-* 60             |  PB7   | "LIN_LSLP"
-* 61             |  PB1   | "SWC_RX0"
-* 62             |  PB2   | "SWC_RX1"
-* 63             |  PB23  | "SPI0_CS3"
-* 64             |  PB27  | "SWC_M0"
-* 65             |  PB0   | "SWC_M1"
-* 66             |  PB22  | "SWC_CLK"
-* 67             |  PC16  | "SWC_INT"
-* 68             |  PC29  | "SWC_SOF"
-* 69             |  PA1   | "CANRX0"
-* 70             |  PA0   | "CANTX0"
-* 71             |  PD3   | "CAN0_CS/HS_CS"
-* 72             |  PB15  | "CANRX1"
-* 73             |  PB14  | "CANTX1"
-* 74             |  PD0   | "CAN1_CS/MS_CS"
-* 75             |  PC24  | "I_SENSE_EN"
-* 76             |  PD1   | "I_SENSE_INT"
-* 77   (Serial3) |  PD4   | "TXD3/UART3"		// 26 Pin Connector
-* 78             |  PD5   | "RXD3/UART3"		// 26 Pin Connector
-* 79             |  PA17  | "SDA0"				// 26 Pin Connector
-* 80             |  PA18  | "SCL0"				// 26 Pin Connector
-* 81             |  PB12  | "SDA1"
-* 82             |  PB13  | "SCL1"
-* 83             |  PB21  | "SPI_CS2"
-* 84             |  PB20  | "USART2TX"		// Test Point 5
-* 85             |  PC1   | "unconnected!"	// ** unconnected processor pin ** //
-*    // Analogue Pins
-*    //--------------
-* 86             |  PB19  | "ANALOG_1/A0"		// ADC12
-* 87             |  PB18  | "ANALOG_2/A1"		// ADC11
-* 88             |  PA2   | "ANALOG_3/A2"		// ADC0
-* 89             |  PA4   | "ANALOG_4/A3"		// ADC2
-* 90             |  PA3   | "ANALOG_5/A4"		// ADC1
-* 91             |  PA16  | "ANALOG_6/A5"		// ADC7
-* 92             |  PA6   | "V_SENSE/A6"		// ADC3
-* 93             |  PB17  | "I_SENSE/A7"		// ADC10
-* 94             |  PD5   | "CPU_TEMP/A8"		// ADC15 CPU Temperature
-* 95             |  PB16  | "I_SENSE_DAC"		// DAC1
-* 96  Pins Masks |  PA17A | "TWI0"
-* 97             |	PB12A | "TWI1"
-* 98             |  PA8A  | "UART"
-* 99      to     |	PA11A | "USART0"
-* 100            |	PA13A | "USART1"
-* 101 Pins Masks |	PD4B  | "USART3"
-* 102            |  PB11  | "USB" (UOTGID)
-* 103            |  PB21  | "USART2RX"			// 26 Pin Connector
-* 104            |  PB15  | "CAN1RX"
-* 105            |  PB14  | "CAN1TX"
-* 106  CAN Masks |  PA1A  | "PINS_CAN0"		// Can0 Pin mask for TX & RX
-* 107  CAN Masks |  PB15A | "PINS_CAN1"		// Can1 Pin mask for TX & RX
+*  0    (Serial) |  PA8   | "XBEE_RX/RX0"
+*  1             |  PA9   | "XBEE_TX/TX0"
+*  2             |  PB25  | "XBEE_RTS"
+*  3             |  PB26  | "XBEE_CTS"
+*  4             |  PC11  | "XBEE_RST"
+*  5             |  PC13  | "XBEE_STAT"
+*  6             |  PC14  | "XBEE_VREF"
+*  7             |  PB3   | "XBEE_PWM"
+*  8             |  PC12  | "XBEE_MULT1"
+*  9             |  PC15  | "XBEE_MULT2"
+*  10            |  PC17  | "XBEE_MULT3"
+*  11            |  PD6   | "XBEE_MULT4"
+*  12            |  PD9   | "XBEE_MULT5"
+*  13            |  PA7   | "XBEE_MULT6"
+*  14            |  PD10  | "DS2"              // Red LED
+*  15            |  PA5   | "DS3"              // Yellow LED
+*  16            |  PD2   | "DS4"              // Yellow LED
+*  17            |  PA15  | "DS5"              // Yellow LED
+*  18            |  PA14  | "DS6"              // Green LED
+*  19            |  PD7   | "DS7_RED/RGB_RED"
+*  20            |  PD8   | "DS7_GREEN/RGB_GREEN"
+*  21            |  PC25  | "DS7_BLUE/RGB_BLUE"
+*  22            |  PC27  | "Button1"          // M2_Button_1
+*  23            |  PB6A  | "Button2"          // M2_Button_2
+*  24      PWMH0 |  PC3   | "GPIO1"
+*  25      PWMH1 |  PC5   | "GPIO2"
+*  26      PWMH2 |  PC7   | "GPIO3"
+*  27      PWMH3 |  PC9   | "GPIO4"
+*  28      PWMH4 |  PC20  | "GPIO5"
+*  29      PWMH5 |  PC19  | "GPIO6"
+*  30      PWML0 |  PC2   | "GPIO1_B"          // legacy M2 Beta
+*  31      PWML1 |  PC4   | "GPIO2_B"          // legacy M2 Beta
+*  32      PWML2 |  PC6   | "GPIO3_B"          // legacy M2 Beta
+*  33      PWML3 |  PC8   | "GPIO4_B"          // legacy M2 Beta
+*  34      PWML4 |  PC21  | "GPIO5_B"          // legacy M2 Beta
+*  35      PWML5 |  PC22  | "GPIO6_B"          // legacy M2 Beta
+*  36            |  PC30  | "SD_SW"
+*  37            |  PA19  | "MCCK"
+*  38            |  PA20  | "MCCDA"
+*  39            |  PA21  | "MCDA0"
+*  40            |  PA22  | "MCDA1"
+*  41            |  PA23  | "MCDA2"
+*  42            |  PA24  | "MCDA3"
+*  43      MISO  |  PA25  | "SPI0_MISO"        // 26 Pin Connector
+*  44      MOSI  |  PA26  | "SPI0_MOSI"        // 26 Pin Connector
+*  45      SCLK  |  PA27  | "SPI0_CLK"         // 26 Pin Connector
+*  46      NPCS1 |  PA29  | "SPI0_CS1"
+*  47            |  PA28  | "SPI0_CS0"
+*  48            |  PC10  | "PS_BUCK/BUCK_DIS"
+*  49            |  PB5   | "PS_J1850_9141"
+*  50            |  PB8   | "J1850_PWM_VPW"
+*  51            |  PC28  | "J1850_PWM_RX"
+*  52            |  PC26  | "J1850_VPW_RX"
+*  53            |  PC18  | "J1850P_TX"
+*  54            |  PC23  | "J1850N_TX"
+*  55  (Serial1) |  PA11  | "LIN_KTX"
+*  56            |  PA10  | "LIN_KRX"
+*  57            |  PB4   | "LIN_KSLP"
+*  58  (Serial2) |  PA13  | "LIN_LTX"
+*  59            |  PA12  | "LIN_LRX"
+*  60            |  PB7   | "LIN_LSLP"
+*  61            |  PB1   | "SWC_RX0"
+*  62            |  PB2   | "SWC_RX1"
+*  63            |  PB23  | "SPI0_CS3"
+*  64            |  PB27  | "SWC_M0"
+*  65            |  PB0   | "SWC_M1"
+*  66            |  PB22  | "SWC_CLK"
+*  67            |  PC16  | "SWC_INT"
+*  68            |  PC29  | "SWC_SOF"
+*  69            |  PA1   | "CANRX0"
+*  70            |  PA0   | "CANTX0"
+*  71            |  PD3   | "CAN0_CS/HS_CS"
+*  72            |  PB15  | "CANRX1"
+*  73            |  PB14  | "CANTX1"
+*  74            |  PD0   | "CAN1_CS/MS_CS"
+*  75            |  PC24  | "I_SENSE_EN"
+*  76            |  PD1   | "I_SENSE_INT"
+*  77  (Serial3) |  PD4   | "TXD3/UART3"       // 26 Pin Connector
+*  78            |  PD5   | "RXD3/UART3"       // 26 Pin Connector
+*  79            |  PA17  | "SDA0"             // 26 Pin Connector
+*  80            |  PA18  | "SCL0"             // 26 Pin Connector
+*  81            |  PB12  | "SDA1"
+*  82            |  PB13  | "SCL1"
+*  83            |  PB21  | "SPI_CS2"
+*  84            |  PB20  | "USART2TX"     // Test Point 5
+*  85            |  PC1   | "unconnected!" // ** unconnected processor pin ** //
+*      // Analogue Pins
+*      //--------------
+*  86            |  PB19  | "ANALOG_1/A0"  // ADC12
+*  87            |  PB18  | "ANALOG_2/A1"  // ADC11
+*  88            |  PA2   | "ANALOG_3/A2"  // ADC0
+*  89            |  PA4   | "ANALOG_4/A3"  // ADC2
+*  90            |  PA3   | "ANALOG_5/A4"  // ADC1
+*  91            |  PA16  | "ANALOG_6/A5"  // ADC7
+*  92            |  PA6   | "V_SENSE/A6"   // ADC3
+*  93            |  PB17  | "I_SENSE/A7"   // ADC10
+*  94            |  PD5   | "CPU_TEMP/A8"  // ADC15 CPU Temperature
+*  95            |  PB16  | "I_SENSE_DAC"  // DAC1
+*  96  Pins Masks|  PA17A | "TWI0"
+*  97            |  PB12A | "TWI1"
+*  98            |  PA8A  | "UART"
+*  99    to      |  PA11A | "USART0"
+*  100           |  PA13A | "USART1"
+*  101 Pins Masks|  PD4B  | "USART3"
+*  102           |  PB11  | "USB" (UOTGID)
+*  103           |  PB21  | "USART2RX"         // 26 Pin Connector
+*  104           |  PB15  | "CAN1RX"
+*  105           |  PB14  | "CAN1TX"
+*  106 CAN Masks |  PA1A  | "PINS_CAN0"        // Can0 Pin mask for TX & RX
+*  107 CAN Masks |  PB15A | "PINS_CAN1"        // Can1 Pin mask for TX & RX
 *
-* USB pin        |  PORT
+*  USB pin       |  PORT
 * ---------------+--------
 *  ID            |  PB11
 *  VBOF          |  PB10
