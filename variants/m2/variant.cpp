@@ -503,9 +503,9 @@ void init( void )
   // Initialize analogOutput module
   analogOutputInit();
 
-  //analogReference(AR_DEFAULT);	// this set the default analogue reference voltage
-  analogWriteResolution(12u);	// set analogue write resolution to 12bit resolution
-  analogReadResolution(12u);	// set analogue read resolution to 12 bits resolution
+  analogReference(AR_DEFAULT);		// this set the default analogue reference voltage
+  analogWriteResolution(12u);		// set analogue write resolution to 12bit resolution
+  analogReadResolution(12u);		// set analogue read resolution to 12 bits resolution
 
 }
 
